@@ -5,7 +5,7 @@ services:
     container_name: e2etests
     volumes:
       - ../test/robot:/test
-      - ../test/robot/output:/test/output
+      - ../results:/test/output
     command: 'robot --outputdir /test/output  /test'
     extra_hosts:
       - 'host.docker.internal:host-gateway'
